@@ -8,7 +8,7 @@ import {
   FindContactButton,
 } from './ContactList.styled';
 
-export const ContactList = ({ contacts, onDeleteContact }) => {
+const ContactList = ({ contacts, onDeleteContact }) => {
   return (
     <ContactListUl>
       {contacts.map(({ id, name, number }) => {
@@ -35,3 +35,4 @@ ContactList.propTypes = {
   ),
   onDeleteContact: PropTypes.func,
 };
+export default ContactList;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { LabelForm, InputForm, FormButton } from './ContactForm.styled';
 
-export class ContactForm extends Component {
+class ContactForm extends Component {
   state = {
     name: '',
     number: '',
@@ -59,3 +59,4 @@ export class ContactForm extends Component {
     );
   }
 }
+export default ContactForm;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FindContact, FindContactInput } from './Filter.styled';
 
-export const Filter = ({ value, onChange }) => {
+const Filter = ({ value, onChange }) => {
   return (
     <FindContact>
       Find contacts by name
@@ -19,3 +19,4 @@ Filter.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
 };
+export default Filter;
