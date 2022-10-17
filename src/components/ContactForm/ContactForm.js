@@ -28,7 +28,7 @@ class ContactForm extends Component {
   render() {
     return (
       <form onSubmit={this.onSubmitAdd}>
-        <LabelForm>
+        <LabelForm htmlFor={this.nameId}>
           Name
           <InputForm
             type="text"
@@ -41,7 +41,7 @@ class ContactForm extends Component {
             onChange={this.handleInputChange}
           />
         </LabelForm>
-        <LabelForm>
+        <LabelForm htmlFor={this.telId}>
           Number
           <InputForm
             type="tel"
